@@ -35,7 +35,6 @@ package flippinganimage;
 public class FlippinganImage {
 	
 	public static void main(String[] args) {
-		
 		int[][] A = {{1,1,0}};
 		flipAndInvertImage(A);
 	}
