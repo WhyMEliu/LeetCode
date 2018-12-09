@@ -1,9 +1,9 @@
 /******************************************************************
  * NumJewelsInStones.java
  * Copyright 2018 by GNNT Company. All Rights Reserved.
- * CreateDate£º2018Äê9ÔÂ12ÈÕ
- * Author£ºLiupeng
- * Version£ºF1.0.0.0
+ * CreateDateï¼š2018å¹´9æœˆ12æ—¥
+ * Authorï¼šLiupeng
+ * Versionï¼šF1.0.0.0
  ******************************************************************/
 
 package jewelsandstones;
@@ -11,37 +11,37 @@ package jewelsandstones;
 import java.util.Scanner;
 
 /**
- * <b>ĞŞ¸Ä¼ÇÂ¼£º</b> 
+ * <b>ä¿®æ”¹è®°å½•ï¼š</b> 
  * <p>
  * <li>
  * 
- *                        ---- LP 2018Äê9ÔÂ12ÈÕ
+ *                        ---- LP 2018å¹´9æœˆ12æ—¥
  * </li>
  * </p>
  * 
- * <b>ÀàËµÃ÷£º</b>
+ * <b>ç±»è¯´æ˜ï¼š</b>
  * <p> 
  * 
  * </p>
  */
 /*
- ¸ø¶¨×Ö·û´®J ´ú±íÊ¯Í·ÖĞ±¦Ê¯µÄÀàĞÍ£¬ºÍ×Ö·û´® S´ú±íÄãÓµÓĞµÄÊ¯Í·¡£ S ÖĞÃ¿¸ö×Ö·û´ú±íÁËÒ»ÖÖÄãÓµÓĞµÄÊ¯Í·µÄÀàĞÍ£¬ÄãÏëÖªµÀÄãÓµÓĞµÄÊ¯Í·ÖĞÓĞ¶àÉÙÊÇ±¦Ê¯¡£
-J ÖĞµÄ×ÖÄ¸²»ÖØ¸´£¬J ºÍ SÖĞµÄËùÓĞ×Ö·û¶¼ÊÇ×ÖÄ¸¡£×ÖÄ¸Çø·Ö´óĞ¡Ğ´£¬Òò´Ë"a"ºÍ"A"ÊÇ²»Í¬ÀàĞÍµÄÊ¯Í·¡£
+ ç»™å®šå­—ç¬¦ä¸²J ä»£è¡¨çŸ³å¤´ä¸­å®çŸ³çš„ç±»å‹ï¼Œå’Œå­—ç¬¦ä¸² Sä»£è¡¨ä½ æ‹¥æœ‰çš„çŸ³å¤´ã€‚ S ä¸­æ¯ä¸ªå­—ç¬¦ä»£è¡¨äº†ä¸€ç§ä½ æ‹¥æœ‰çš„çŸ³å¤´çš„ç±»å‹ï¼Œä½ æƒ³çŸ¥é“ä½ æ‹¥æœ‰çš„çŸ³å¤´ä¸­æœ‰å¤šå°‘æ˜¯å®çŸ³ã€‚
+J ä¸­çš„å­—æ¯ä¸é‡å¤ï¼ŒJ å’Œ Sä¸­çš„æ‰€æœ‰å­—ç¬¦éƒ½æ˜¯å­—æ¯ã€‚å­—æ¯åŒºåˆ†å¤§å°å†™ï¼Œå› æ­¤"a"å’Œ"A"æ˜¯ä¸åŒç±»å‹çš„çŸ³å¤´ã€‚
 
-Ê¾Àı 1:
+ç¤ºä¾‹ 1:
 
-ÊäÈë: J = "aA", S = "aAAbbbb"
-Êä³ö: 3
-Ê¾Àı 2:
+è¾“å…¥: J = "aA", S = "aAAbbbb"
+è¾“å‡º: 3
+ç¤ºä¾‹ 2:
 
-ÊäÈë: J = "z", S = "ZZ"
-Êä³ö: 0
+è¾“å…¥: J = "z", S = "ZZ"
+è¾“å‡º: 0
 */
 
 public class NumJewelsInStones {
 	public static void main(String[] args) {
 	/*	Scanner sc = new Scanner(System.in);
-		System.out.println("½ÓÊÕÊı¾İ£º");
+		System.out.println("æ¥æ”¶æ•°æ®ï¼š");
 		if(sc.hasNext()){
 			String ss= sc.next();
 			System.out.println(ss);
@@ -53,7 +53,7 @@ public class NumJewelsInStones {
 	}
 	
 	public static int numJewelsInStones(String j,String s){
-		/*Èç¹ûj,sÖØ¸´µÄ»°
+		/*å¦‚æœj,sé‡å¤çš„è¯
 		 int njs=0;
 		char[] a= j.toCharArray();
 		char[] b= s.toCharArray();
@@ -66,7 +66,7 @@ public class NumJewelsInStones {
 		}
 		return njs;*/
 		
-		//j,s²»ÖØ¸´
+		//j,sä¸é‡å¤
 		int njs=0;
 		for (int i = 0; i < j.length(); i++) {
 			if(s.indexOf(j.charAt(i))>=0) njs++;

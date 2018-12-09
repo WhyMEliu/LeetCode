@@ -1,27 +1,27 @@
 /******************************************************************
  * RobotReturntoOrigin.java
  * Copyright 2018 by GNNT Company. All Rights Reserved.
- * CreateDate£º2018Äê9ÔÂ13ÈÕ
- * Author£ºLiupeng
- * Version£ºF1.0.0.0
+ * CreateDateï¼š2018å¹´9æœˆ13æ—¥
+ * Authorï¼šLiupeng
+ * Versionï¼šF1.0.0.0
  ******************************************************************/
 
 package robotreturntoorigin;
 
 
-/*ÔÚ¶þÎ¬Æ½ÃæÉÏ£¬ÓÐÒ»¸ö»úÆ÷ÈË´ÓÔ­µã (0, 0) ¿ªÊ¼¡£¸ø³öËüµÄÒÆ¶¯Ë³Ðò£¬ÅÐ¶ÏÕâ¸ö»úÆ÷ÈËÔÚÍê³ÉÒÆ¶¯ºóÊÇ·ñÔÚ (0, 0) ´¦½áÊø¡£
-ÒÆ¶¯Ë³ÐòÓÉ×Ö·û´®±íÊ¾¡£×Ö·û move[i] ±íÊ¾ÆäµÚ i ´ÎÒÆ¶¯¡£»úÆ÷ÈËµÄÓÐÐ§¶¯×÷ÓÐ R£¨ÓÒ£©£¬L£¨×ó£©£¬U£¨ÉÏ£©ºÍ D£¨ÏÂ£©¡£Èç¹û»úÆ÷ÈËÔÚÍê³ÉËùÓÐ¶¯×÷ºó·µ»ØÔ­µã£¬Ôò·µ»Ø true¡£·ñÔò£¬·µ»Ø false¡£
-×¢Òâ£º»úÆ÷ÈË¡°Ãæ³¯¡±µÄ·½ÏòÎÞ¹Ø½ôÒª¡£ ¡°R¡± ½«Ê¼ÖÕÊ¹»úÆ÷ÈËÏòÓÒÒÆ¶¯Ò»´Î£¬¡°L¡± ½«Ê¼ÖÕÏò×óÒÆ¶¯µÈ¡£´ËÍâ£¬¼ÙÉèÃ¿´ÎÒÆ¶¯»úÆ÷ÈËµÄÒÆ¶¯·ù¶ÈÏàÍ¬¡£
+/*åœ¨äºŒç»´å¹³é¢ä¸Šï¼Œæœ‰ä¸€ä¸ªæœºå™¨äººä»ŽåŽŸç‚¹ (0, 0) å¼€å§‹ã€‚ç»™å‡ºå®ƒçš„ç§»åŠ¨é¡ºåºï¼Œåˆ¤æ–­è¿™ä¸ªæœºå™¨äººåœ¨å®Œæˆç§»åŠ¨åŽæ˜¯å¦åœ¨ (0, 0) å¤„ç»“æŸã€‚
+ç§»åŠ¨é¡ºåºç”±å­—ç¬¦ä¸²è¡¨ç¤ºã€‚å­—ç¬¦ move[i] è¡¨ç¤ºå…¶ç¬¬ i æ¬¡ç§»åŠ¨ã€‚æœºå™¨äººçš„æœ‰æ•ˆåŠ¨ä½œæœ‰ Rï¼ˆå³ï¼‰ï¼ŒLï¼ˆå·¦ï¼‰ï¼ŒUï¼ˆä¸Šï¼‰å’Œ Dï¼ˆä¸‹ï¼‰ã€‚å¦‚æžœæœºå™¨äººåœ¨å®Œæˆæ‰€æœ‰åŠ¨ä½œåŽè¿”å›žåŽŸç‚¹ï¼Œåˆ™è¿”å›ž trueã€‚å¦åˆ™ï¼Œè¿”å›ž falseã€‚
+æ³¨æ„ï¼šæœºå™¨äººâ€œé¢æœâ€çš„æ–¹å‘æ— å…³ç´§è¦ã€‚ â€œRâ€ å°†å§‹ç»ˆä½¿æœºå™¨äººå‘å³ç§»åŠ¨ä¸€æ¬¡ï¼Œâ€œLâ€ å°†å§‹ç»ˆå‘å·¦ç§»åŠ¨ç­‰ã€‚æ­¤å¤–ï¼Œå‡è®¾æ¯æ¬¡ç§»åŠ¨æœºå™¨äººçš„ç§»åŠ¨å¹…åº¦ç›¸åŒã€‚
 
-Ê¾Àý 1:
-ÊäÈë: "UD"
-Êä³ö: true
-½âÊÍ£º»úÆ÷ÈËÏòÉÏÒÆ¶¯Ò»´Î£¬È»ºóÏòÏÂÒÆ¶¯Ò»´Î¡£ËùÓÐ¶¯×÷¶¼¾ßÓÐÏàÍ¬µÄ·ù¶È£¬Òò´ËËü×îÖÕ»Øµ½Ëü¿ªÊ¼µÄÔ­µã¡£Òò´Ë£¬ÎÒÃÇ·µ»Ø true¡£
+ç¤ºä¾‹ 1:
+è¾“å…¥: "UD"
+è¾“å‡º: true
+è§£é‡Šï¼šæœºå™¨äººå‘ä¸Šç§»åŠ¨ä¸€æ¬¡ï¼Œç„¶åŽå‘ä¸‹ç§»åŠ¨ä¸€æ¬¡ã€‚æ‰€æœ‰åŠ¨ä½œéƒ½å…·æœ‰ç›¸åŒçš„å¹…åº¦ï¼Œå› æ­¤å®ƒæœ€ç»ˆå›žåˆ°å®ƒå¼€å§‹çš„åŽŸç‚¹ã€‚å› æ­¤ï¼Œæˆ‘ä»¬è¿”å›ž trueã€‚
 
-Ê¾Àý 2:
-ÊäÈë: "LL"
-Êä³ö: false
-½âÊÍ£º»úÆ÷ÈËÏò×óÒÆ¶¯Á½´Î¡£Ëü×îÖÕÎ»ÓÚÔ­µãµÄ×ó²à£¬¾àÔ­µãÓÐÁ½´Î ¡°ÒÆ¶¯¡± µÄ¾àÀë¡£ÎÒÃÇ·µ»Ø false£¬ÒòÎªËüÔÚÒÆ¶¯½áÊøÊ±Ã»ÓÐ·µ»ØÔ­µã¡£*/
+ç¤ºä¾‹ 2:
+è¾“å…¥: "LL"
+è¾“å‡º: false
+è§£é‡Šï¼šæœºå™¨äººå‘å·¦ç§»åŠ¨ä¸¤æ¬¡ã€‚å®ƒæœ€ç»ˆä½äºŽåŽŸç‚¹çš„å·¦ä¾§ï¼Œè·åŽŸç‚¹æœ‰ä¸¤æ¬¡ â€œç§»åŠ¨â€ çš„è·ç¦»ã€‚æˆ‘ä»¬è¿”å›ž falseï¼Œå› ä¸ºå®ƒåœ¨ç§»åŠ¨ç»“æŸæ—¶æ²¡æœ‰è¿”å›žåŽŸç‚¹ã€‚*/
 
 public class RobotReturntoOrigin {
 	public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class RobotReturntoOrigin {
 	}
 	
 	public static boolean judgeCircle(String moves) {
-        //¼ì²é×Ö·û´® UD¼°LLµÄ¶Ô±ÈÊý
+        //æ£€æŸ¥å­—ç¬¦ä¸² UDåŠLLçš„å¯¹æ¯”æ•°
 		int a =0;int b =0;
 		for (int i = 0; i < moves.length(); i++) {
 			if(moves.charAt(i)=='U')a++;

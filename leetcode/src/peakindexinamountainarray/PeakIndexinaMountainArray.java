@@ -1,37 +1,37 @@
 /******************************************************************
  * PeakIndexinaMountainArray.java
  * Copyright 2018 by GNNT Company. All Rights Reserved.
- * CreateDate£º2018Äê9ÔÂ19ÈÕ
- * Author£ºLiupeng
- * Version£ºF1.0.0.0
+ * CreateDateï¼š2018å¹´9æœˆ19æ—¥
+ * Authorï¼šLiupeng
+ * Versionï¼šF1.0.0.0
  ******************************************************************/
 
 package peakindexinamountainarray;
 
 
-/*ÎÒÃÇ°Ñ·ûºÏÏÂÁÐÊôÐÔµÄÊý×é A ³Æ×÷É½Âö£º
+/*æˆ‘ä»¬æŠŠç¬¦åˆä¸‹åˆ—å±žæ€§çš„æ•°ç»„ A ç§°ä½œå±±è„‰ï¼š
 
 A.length >= 3
-´æÔÚ 0 < i < A.length - 1 Ê¹µÃA[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1]
-¸ø¶¨Ò»¸öÈ·¶¨ÎªÉ½ÂöµÄÊý×é£¬·µ»ØÈÎºÎÂú×ã A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1] µÄ i µÄÖµ¡£
+å­˜åœ¨ 0 < i < A.length - 1 ä½¿å¾—A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1]
+ç»™å®šä¸€ä¸ªç¡®å®šä¸ºå±±è„‰çš„æ•°ç»„ï¼Œè¿”å›žä»»ä½•æ»¡è¶³ A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1] çš„ i çš„å€¼ã€‚
 
  
 
-Ê¾Àý 1£º
+ç¤ºä¾‹ 1ï¼š
 
-ÊäÈë£º[0,1,0]
-Êä³ö£º1
-Ê¾Àý 2£º
+è¾“å…¥ï¼š[0,1,0]
+è¾“å‡ºï¼š1
+ç¤ºä¾‹ 2ï¼š
 
-ÊäÈë£º[0,2,1,0]
-Êä³ö£º1
+è¾“å…¥ï¼š[0,2,1,0]
+è¾“å‡ºï¼š1
  
 
-ÌáÊ¾£º
+æç¤ºï¼š
 
 3 <= A.length <= 10000
 0 <= A[i] <= 10^6
-A ÊÇÈçÉÏ¶¨ÒåµÄÉ½Âö
+A æ˜¯å¦‚ä¸Šå®šä¹‰çš„å±±è„‰
 */
 public class PeakIndexinaMountainArray {
 	public static void main(String[] args) {

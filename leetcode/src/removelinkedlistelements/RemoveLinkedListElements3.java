@@ -1,14 +1,14 @@
 package removelinkedlistelements;
 
-/*É¾³ýÁ´±íÖÐµÈÓÚ¸ø¶¨Öµ val µÄËùÓÐ½Úµã¡£
+/*åˆ é™¤é“¾è¡¨ä¸­ç­‰äºŽç»™å®šå€¼ val çš„æ‰€æœ‰èŠ‚ç‚¹ã€‚
 
-        Ê¾Àý:
+        ç¤ºä¾‹:
 
-        ÊäÈë: 1->2->6->3->4->5->6, val = 6
-        Êä³ö: 1->2->3->4->5*/
+        è¾“å…¥: 1->2->6->3->4->5->6, val = 6
+        è¾“å‡º: 1->2->3->4->5*/
 
 /**
- * µÝ¹é½âÌâ~
+ * é€’å½’è§£é¢˜~
  */
 public class RemoveLinkedListElements3 {
     public ListNode removeElements(ListNode head, int val) {
